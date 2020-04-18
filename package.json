@@ -30,6 +30,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby-plugin-ts-config": "^0.2.2",
     "prettier": "2.0.4"
   },
