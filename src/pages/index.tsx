@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Col, Row } from "react-grid-system";
+import { Container, Col, Row, Visible } from "react-grid-system";
 import { Experience, Header, Tools } from "../components";
 import "../fonts/fonts.css";
 
@@ -8,8 +8,10 @@ export default () => (
     <Header />
     <Container>
       <Row>
-        <Col sm={2} />
-        <Col sm={8}>
+        <Visible md lg xl>
+          <Col md={2} />
+        </Visible>
+        <Col sm={12} md={8} lg={8} xl={8}>
           <Experience
             job="Lead developer front-end"
             location="Marseille"
@@ -25,7 +27,8 @@ export default () => (
               Tools.circleci,
             ]}
           >
-            Mise en place et dévelopement d'une application front-end (SPA) pour faciliter le transport de containers.
+            Mise en place et dévelopement d'une application front-end (SPA) pour
+            faciliter le transport de containers.
             <ul>
               <li>Choix des technologies</li>
               <li>
@@ -57,23 +60,26 @@ export default () => (
               Tools.php,
             ]}
           >
-            Conception, dévelopement et mise en place d'applications web en collaboration avec
-            les services operationnels. Maintenance et optimisation du parc de base
-            de données.
+            Conception, dévelopement et mise en place d'applications web en
+            collaboration avec les services operationnels. Maintenance et
+            optimisation du parc de base de données.
             <ul>
               <li>
-                Développement d'une application à destination des pilotes
-                comme aide à la décision dans le but d'optimiser les coûts liés à la consommation du
-                fuel.
+                Développement d'une application à destination des acheteurs et
+                pilotes comme aide à la décision dans le but d'optimiser les
+                coûts liés à la consommation du fuel.
               </li>
               <li>
                 Développement d'une application de gestion des équipages
-                (planning), mise à disposition des crews via une interface mobile.
+                (planning), mise à disposition des crews via une interface
+                mobile.
               </li>
             </ul>
           </Experience>
         </Col>
-        <Col sm={2} />
+        <Visible md lg xl>
+          <Col md={2} />
+        </Visible>
       </Row>
     </Container>
   </>

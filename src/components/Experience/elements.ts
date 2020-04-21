@@ -1,10 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   margin-bottom: 8rem;
 
   a {
-    float: right;
     color: ${props => props.theme.color.link};
     transition: color 200ms ease-in-out;
 
@@ -23,12 +22,13 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.h3`
-  padding: 0.5rem 0;
-  border-bottom: 1px dashed ${props => props.theme.color.border};
+  display: flex;
+  margin: 0;
 `;
 
 export const Job = styled.span`
   text-transform: capitalize;
+  flex: 1;
 `;
 
 export const Location = styled.span``;
@@ -36,9 +36,11 @@ export const Location = styled.span``;
 export const Period = styled.span``;
 
 export const SubHeader = styled.div`
-  font-size: 0.8em;
   color: ${props => props.theme.color.secondaryText};
   font-weight: normal;
+  border-bottom: 1px dashed ${props => props.theme.color.border};
+  padding-bottom: 0.2rem;
+  margin-bottom: 1rem;
 
   ${Period} {
     float: right;

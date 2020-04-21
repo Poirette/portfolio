@@ -30,14 +30,14 @@ const Experience = ({ job, location, company, children, tools }: IProps) => (
     <Header>
       <Job>{job}</Job>
       <Company link={company.web} name={company.name} />
-      <SubHeader>
-        <Location>{location}</Location>
-        <Period>mai 2016 - en poste</Period>
-      </SubHeader>
     </Header>
+    <SubHeader>
+      <Location>{location}</Location>
+      <Period>mai 2016 - en poste</Period>
+    </SubHeader>
     <Description>{children}</Description>
     <Icons>
-      {tools.reverse().map(tool => (
+      {tools.map(tool => (
         <Tool name={tool} />
       ))}
     </Icons>

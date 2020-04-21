@@ -12,7 +12,7 @@ const typography = new Typography({
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["Fira Code"],
-})
+  bodyFontFamily: ["Fira Code", "Avenir Next", "Helvetica Neue"],
+});
 
 export default typography;
