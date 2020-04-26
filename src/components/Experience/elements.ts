@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 
   a {
     color: ${props => props.theme.color.link};
@@ -41,10 +41,8 @@ export const SubHeader = styled.div`
   border-bottom: 1px dashed ${props => props.theme.color.border};
   padding-bottom: 0.2rem;
   margin-bottom: 1rem;
-
-  ${Period} {
-    float: right;
-  }
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const Company = styled.span``;

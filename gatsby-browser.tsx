@@ -1,5 +1,5 @@
 import React from "react";
-import ThemeManager from "./src/components/ThemeManager";
+import { ToolTipProvider, ThemeManager } from "./src/components";
 import { darkTheme, lightTheme } from './src/theme';
 import { createGlobalStyle } from "styled-components";
 
@@ -34,6 +34,7 @@ const GlobalStyle = createGlobalStyle`
 export const wrapPageElement = ({ element }) => {
   return (
     <ThemeManager lightTheme={lightTheme} darkTheme={darkTheme}>
+      <ToolTipProvider />
       <GlobalStyle />
       {element}
     </ThemeManager>

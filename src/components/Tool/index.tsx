@@ -81,7 +81,7 @@ const Tool = ({ name }) => {
   const { Icon, web } = tools[name];
 
   return (
-    <a href={web} target="_blank" title={name}>
+    <a href={web} target="_blank" title={name} data-tip={name}>
       <Icon />
     </a>
   );
