@@ -8,6 +8,8 @@ const lightTheme = {
     secondaryText: "#d6cb3e",
     headerBackground: "#0a1b2d",
     headerText: "white",
+    stats: "#5ec77f",
+    startupIcon: "#acdadc",
   },
 };
 

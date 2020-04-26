@@ -19,11 +19,22 @@ export const Container = styled.div`
       margin-bottom: 0;
     }
   }
+
+  svg.startup {
+    fill: ${({ theme }) => theme.color.startupIcon};
+    font-size: 2.5em;
+    border-radius: 50%;
+    padding: 0.4rem;
+    position: absolute;
+    left: -50px;
+    top: -2px;
+  }
 `;
 
 export const Header = styled.h3`
   display: flex;
   margin: 0;
+  position: relative;
 `;
 
 export const Job = styled.span`
@@ -57,10 +68,15 @@ export const Icons = styled.div`
 
   & > a {
     margin: 0 5px;
-    transition: transform 200ms ease-in-out;
+    & svg {
+      transition: transform 200ms ease-in-out;
+    }
+
     &:hover {
       cursor: pointer;
-      transform: scale3d(1.3, 1.3, 1.3);
+      & svg {
+        transform: scale3d(1.3, 1.3, 1.3);
+      }
     }
   }
 

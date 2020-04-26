@@ -1,5 +1,5 @@
 import React from 'react'
-import * as Icons from './Icons'
+import * as Icons from '../Icons'
 
 export enum Tools {
   redux = "Redux",

@@ -5,4 +5,7 @@ export const Container = styled.header`
   padding: 1em;
   background-color: ${props => props.theme.color.headerBackground};
   color: ${props => props.theme.color.headerText};
+  position: fixed;
+  width: 100vw;
+  z-index: 200;
 `;

@@ -11,6 +11,7 @@ import {
 } from "./elements";
 import Company from "./Company";
 import Period from "./Period";
+import Startup from "./Startup";
 import Tool, { Tools } from "../Tool";
 
 interface ICompany {
@@ -25,6 +26,7 @@ interface IProps {
   children: ReactNode,
   tools: Tools[],
   period: [Date, Date],
+  startup: boolean,
 };
 
 const Experience = ({
@@ -34,9 +36,11 @@ const Experience = ({
   children,
   tools,
   period,
+  startup,
 }: IProps) => (
   <Container>
     <Header>
+      {startup && <Startup />}
       <Job>{job}</Job>
       <Company link={company.web} name={company.name} />
     </Header>
@@ -52,5 +56,9 @@ const Experience = ({
     </Icons>
   </Container>
 );
+
+Experience.defaultProps = {
+  startup: false,
+};
 
 export default Experience;

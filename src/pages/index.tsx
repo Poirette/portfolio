@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col, Row, Visible } from "react-grid-system";
-import { Experience, Header, Tools, Stat } from "../components";
+import { Experience, Header, Tools, Stat, Rocket } from "../components";
 import "../fonts/fonts.css";
 
 export default () => (
@@ -15,10 +15,6 @@ export default () => (
             <Stat value="5" unit="ans" label="de ReactJS" />
             <Stat value="3" unit="ans" label="en tant que Lead" />
           </Stat.Group>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
         </Col>
       </Row>
       <Row>
@@ -41,6 +37,7 @@ export default () => (
               Tools.graphql,
               Tools.circleci,
             ]}
+            startup
           >
             Mise en place et dévelopement d'une application front-end (SPA) pour
             faciliter le transport de containers.
@@ -113,6 +110,7 @@ export default () => (
               Tools.nodejs,
               Tools.php,
             ]}
+            startup
           >
             En mission longue durée au sein de la startup Aston iTF,
             développement d'une plateforme SaaS permettant d'optimiser la
