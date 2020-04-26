@@ -6,7 +6,7 @@ import "../fonts/fonts.css";
 export default () => (
   <>
     <Header />
-    <Container>
+    <Container style={{ marginTop: "4em" }}>
       <Row>
         <Col>
           <Stat.Group>
@@ -17,11 +17,8 @@ export default () => (
           </Stat.Group>
         </Col>
       </Row>
-      <Row>
-        <Visible md lg xl>
-          <Col md={2} />
-        </Visible>
-        <Col sm={12} md={8} lg={8} xl={8}>
+      <Row justify="center">
+        <Col xs={12} md={10} lg={8} xl={8}>
           <Experience
             job="Lead developer front-end"
             location="Marseille"
@@ -134,7 +131,7 @@ export default () => (
           </Experience>
           <Experience
             job="Fullstack Developer"
-            location="Pompey"
+            location="Nancy"
             period={[new Date(2011, 6, 1), new Date(2013, 8, 1)]}
             company={{
               name: "Advensys",
@@ -156,10 +153,16 @@ export default () => (
               <li>Support utilisateurs sur l'utilisation de la platforme</li>
             </ul>
           </Experience>
+          <Experience
+            job="Web developer"
+            location="Sarrebourg"
+            period={[new Date(2010, 3, 1), new Date(2011, 3, 1)]}
+            company={{ name: "Agecco" }}
+            tools={[Tools.jquery, Tools.php]}
+          >
+            Refonte de sites immobilier et ajout de nouvelles features
+          </Experience>
         </Col>
-        <Visible md lg xl>
-          <Col md={2} />
-        </Visible>
       </Row>
     </Container>
   </>

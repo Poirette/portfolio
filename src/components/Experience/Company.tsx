@@ -1,12 +1,17 @@
-import React from 'react';
+import React from "react";
 
-const Company = ({
-  link,
-  name,
-}) => (
-  <a href={link} title={name}>
-    {`@${name}`}
-  </a>
-);
+interface IProps {
+  link?: string;
+  name: string;
+}
+
+const Company = ({ link, name }: IProps) =>
+  link ? (
+    <a href={link} title={name}>
+      {`@${name}`}
+    </a>
+  ) : (
+    <>{name}</>
+  );
 
 export default Company;

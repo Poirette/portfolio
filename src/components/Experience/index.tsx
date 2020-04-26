@@ -16,8 +16,8 @@ import Tool, { Tools } from "../Tool";
 
 interface ICompany {
   name: string,
-  web: string,
-};
+  web?: string,
+}
 
 interface IProps {
   job: string,
@@ -27,7 +27,7 @@ interface IProps {
   tools: Tools[],
   period: [Date, Date],
   startup: boolean,
-};
+}
 
 const Experience = ({
   job,

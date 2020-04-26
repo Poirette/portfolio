@@ -6,6 +6,7 @@ export const Container = styled.header`
   background-color: ${props => props.theme.color.headerBackground};
   color: ${props => props.theme.color.headerText};
   position: fixed;
+  top: 0;
   width: 100vw;
   z-index: 200;
 `;
